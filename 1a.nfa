@@ -1,0 +1,11 @@
+alphabet: {a,b,c,d,e}
+start: Q1
+accepting: {Q1,sa,sb,sc,sd,se}
+Q1 (_ -> Q0)
+Q0 (a -> sa) (b -> na) (c -> na) (d -> na) (e -> na) (b -> sb) (a -> nb) (c -> nb) (d -> nb) (e -> nb) (c -> sc) (a -> nc) (b -> nc) (d -> nc) (e -> nc) (d -> sd) (a -> nd) (b -> nd) (c -> nd) (e -> nd) (e -> se) (a -> ne) (b -> ne)(c -> ne) (d -> ne)
+na (b -> na) (c -> na) (d -> na) (e -> na) (a -> sa)
+nb (a -> nb) (b -> nb) (c -> nb) (d -> nb) (b -> sb)
+nc (a -> nc) (b -> nc) (d -> nc) (e -> nc) (c -> sc)
+nd (a -> nd) (b -> nd) (c -> nd) (e -> nd) (d -> sd)
+ne (a -> ne) (b -> ne) (c -> ne) (d -> ne) (e -> sd)
+
